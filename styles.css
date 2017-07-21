@@ -29,7 +29,7 @@ h1, h2, h3, h4{
     font-family: 'Raleway', sans-serif;
 }
 b{
-    color: var(--primary);
+    color: var(--secondary);
 }
 hr{
     width: 200px;
@@ -126,4 +126,25 @@ p{
   margin-left: -25px;
   margin-top: -50px;
   top: -20px;
+}
+
+.card{
+    background-color: var(--dark)
+}
+
+#horarios .card{
+    background-color: var(--light-dark)
+}
+.horario{
+    border-radius: 7px;
+    text-align: center;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background: var(--primary); /* Old browsers */
+    background: -moz-linear-gradient(left, var(--secondary) 0%, var(--primary) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, var(--secondary) 0%,var(--primary) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, var(--secondary) 0%,var(--primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: var(--white)
 }
