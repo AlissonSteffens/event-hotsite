@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+:root{
+    --dark: #342b57;
+    --primary: #9c2d60;
+    --secondary: #fe4c59;
+    --white: #fefdfe;
+    --dark-gray: #82889f;
+    --dark-primary: #cf395f;
+    --light-gray: #d8d0d8;
+    --gray: #b6b5c4;
+}
+
+body{
+    background-color: var(--dark);
+    color: var(--white);
+}
+section{
+  padding: 5% 0;
+}
+img{
+    margin: auto;
+}
+h1, h2, h3, h4{
+    font-family: 'Raleway', sans-serif;
+}
+b{
+    color: var(--primary);
+}
+hr{
+    width: 200px;
+    background-color: var(--dark-primary);
+    height: 5px;
+    border-radius: 2px;
+}
+hr{
+    background: var(--primary); /* Old browsers */
+    background: -moz-linear-gradient(left, var(--secondary) 0%, var(--primary) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, var(--secondary) 0%,var(--primary) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, var(--secondary) 0%,var(--primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.btn-primary{
+    background: var(--primary); /* Old browsers */
+    background: -moz-linear-gradient(top, var(--secondary) 0%, var(--primary) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, var(--secondary) 0%,var(--primary) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, var(--secondary) 0%,var(--primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-color: transparent;
+}
+.btn-primary:hover{
+    border-color: transparent;
+    background: var(--secondary); /* Old browsers */
+}
+
+.nav-item{
+    border-bottom: 3px solid var(--dark);
+    transition: 0.5s ease;
+    margin-bottom: -3px;
+    white-space: nowrap;
+}
+.nav-item:hover {
+    border-bottom: 3px solid var(--secondary);
+    width: 100%;
+}
+#header{
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+}
+#hero{
+    padding: 2% 30% ;
+}
+#hero .display-4{
+    font-weight: 800;
+    color: var(--white);
+}
+
+
+#hero hr{
+    background-color: var(--white);
+}
+#master-btn{
+    font-size: 50px;
+}
+p{
+    color: var(--gray);
+}
+.initial-letter{
+    display: inline-block;
+    margin-right: 1%;
+    float: left;
+    color: var(--dark-primary);
+    font-size: 53px;
+    line-height: 57px;
+}
+.img-frame{
+    padding: 5px;
+    margin: 0;
+}
+.frame{
+    border: 10px solid var(--white);
+}
