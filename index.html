@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-toggleable-md navbar-inverse" id="nav">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="nav">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -45,13 +45,13 @@
         <div class="col-12 my-5">
           <h4>25 de agosto - Auditório I - Bloco F4 – Univali – Campus Itajaí </h4>
         </div>        
-        <button class="btn btn-primary" id="master-btn">Entrada Gratuita</button>
+        
       </div>
     </section>
-
-    <section id="introducao">
+    <div class="arrow goto" data-to="#apresentacao"><img src="img/arrow.svg" class="social" width="50" /></div>
+    <section id="apresentacao">
       <div class="container text-center">
-        <h2 class="display-4">Relatos de Experiência</h2>
+        <h2 class="display-4">Apresentação</h2>
         <hr>
         <h4 class="my-5">Relatos de experiência sobre o Pensamento Computacional e ensino de Computação na Educação Básica</h4>
         <div class="row">
@@ -68,44 +68,49 @@
       </div>
     </section>
 
-    <section id="recursos">
-      <div class="container">
-        <h2 class="display-4">Introdução</h2>
+    <section id="participar">
+      <div class="container text-center">
+        <h2 class="display-4">Como Participar?</h2>
         <hr>
-        <div class="row" class="text-center">
-          <div class="col-md-4">
-            <img src="img/interface_icon.svg" height="80px" class="mx-auto"></img>
-            <h5 class="text-center">Interface Didática</h5>
-            <p class="lead text-center">A tela inicial foi projetada para permitir rápido acesso às principais funcionalidades do ambiente</p>
+        <div class="sub-topic">
+          <h3 class="sub-title">Público Alvo </h3>
+          <div class="row" class="text-center">
+            <div class="col-md-3">
+              <img src="img/school.svg" height="80px" class="mx-auto"></img>
+              <h5 class="text-center">Professores de Educação básica</h5>
+            </div>
+            <div class="col-md-3">
+              <img src="img/school.svg" height="80px" class="mx-auto"></img>
+              <h5 class="text-center">Estudantes de licenciaturas</h5>
+            </div>
+            <div class="col-md-3">
+              <img src="img/school.svg" height="80px" class="mx-auto"></img>
+              <h5 class="text-center">Estudantes de Computação e áreas afins</h5>
+            </div>
+            <div class="col-md-3">
+              <img src="img/school.svg" height="80px" class="mx-auto"></img>
+              <h5 class="text-center">Gestores de redes educacionais</h5>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="img/help_icon.svg" height="80px" class="mx-auto"></img>
-            <h5 class="text-center">Sistema de ajuda</h5>
-            <p class="lead text-center">O sistema de ajuda navegável e os demais materiais de apoio facilitam o aprendizado da ferramenta</p>
-          </div>
-          <div class="col-md-4">
-            <img src="img/tree_icon.svg" height="80px" class="mx-auto"></img>
-            <h5 class="text-center">Arvore Estrutural</h5>
-            <p class="lead text-center">A árvore estrutural permite identificar e compreender os elementos que compõem o programa escrito</p>
-          </div>
-          <div class="col-md-4">
-            <img src="img/code_icon.svg" height="80px" class="mx-auto"></img>
-            <h5 class="text-center">Editor de Código</h5>
-            <p class="lead text-center">O editor possui destaque de sintaxe, conclusão de código (para bibliotecas), suporte a temas e dobramento de código</p>
-          </div>
-          <div class="col-md-4">
-            <img src="img/debug_icon.svg" height="80px" class="mx-auto"></img>
-            <h5 class="text-center">Depurador</h5>
-            <p class="lead text-center">O depurador permite executar o programa passo a passo</p>
-          </div>
-          <div class="col-md-4">
-            <img src="img/game_icon.svg" height="80px" class="mx-auto"></img>
-            <h5 class="text-center">Suporte à Jogos</h5>
-            <p class="lead text-center">As bibliotecas do Portugol Studio permitem escrever programas mais complexos incluindo jogos com interface gráfica</p>
+        </div>
+        <div class="sub-topic">
+          <h3 class="sub-title">Objetivos </h3>
+          <div class="row" class="text-center">
+            <div class="col-md-6">
+              <img src="img/school.svg" height="150px" class="mx-auto"></img>
+              <h5 class="text-center">Discutir</h5>
+              <p>Discutir sobre o ensino de computação na educação básica</p>
+            </div>
+            <div class="col-md-6">
+              <img src="img/school.svg" height="150px" class="mx-auto"></img>
+              <h5 class="text-center">Apresentar</h5>
+              <p>Apresentar ações de extensão para popularização do pensamento computacional que estão sendo realizadas pela Univali em sua região de atuação.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -116,6 +121,15 @@
         var nav = $('#nav').height()
         $('section').css('min-height', height)
       })
+      
+      $('.goto').click(function () {
+        var height = $(this.dataset.to).offset().top
+        $('html, body').animate({scrollTop: height}, 'ease')
+        if (this.dataset.to === '#recursos') {
+          $('#nav-download').show(200)
+        }
+      })
+
     </script>
   </body>
 </html>

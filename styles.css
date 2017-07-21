@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
 :root{
     --dark: #342b57;
+    --light-dark: #392D5B;
     --primary: #9c2d60;
     --secondary: #fe4c59;
     --white: #fefdfe;
@@ -16,6 +17,10 @@ body{
 }
 section{
   padding: 5% 0;
+}
+.navbar-inverse{
+    background-color: var(--dark);
+    border-bottom: 2px solid var(--primary);
 }
 img{
     margin: auto;
@@ -44,10 +49,10 @@ hr{
     background: -moz-linear-gradient(top, var(--secondary) 0%, var(--primary) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, var(--secondary) 0%,var(--primary) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, var(--secondary) 0%,var(--primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    border-color: transparent;
+    border-color: var(--primary);
 }
 .btn-primary:hover{
-    border-color: transparent;
+    border-color: var(--secondary);
     background: var(--secondary); /* Old browsers */
 }
 
@@ -64,6 +69,17 @@ hr{
 #header{
     background-image: url('img/bg.jpg');
     background-size: cover;
+    background-attachment: fixed;
+}
+.arrow img{
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#participar{
+    background-image: url('img/square.svg');
+    background-repeat: repeat-x;
+    background-color: var(--light-dark);
 }
 #hero{
     padding: 2% 30% ;
@@ -72,10 +88,8 @@ hr{
     font-weight: 800;
     color: var(--white);
 }
-
-
 #hero hr{
-    background-color: var(--white);
+    background: var(--white) !important;
 }
 #master-btn{
     font-size: 50px;
@@ -97,4 +111,19 @@ p{
 }
 .frame{
     border: 10px solid var(--white);
+}
+.sub-title{
+    text-align: left;
+    padding: 10px 20px;
+    border-left:3px solid var(--secondary);
+}
+.sub-topic{
+    margin-top: 7%;
+}
+.arrow {
+  cursor: pointer;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -50px;
+  top: -20px;
 }
