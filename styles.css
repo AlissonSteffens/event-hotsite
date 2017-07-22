@@ -85,6 +85,10 @@ hr{
     background-image: url('img/inverse_square.svg');
     background-repeat: repeat-x;
 }
+footer{
+    background-image: url('img/real_square.svg');
+    background-repeat: repeat-x;
+}
 #hero{
     padding: 2% 30% ;
 }
