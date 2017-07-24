@@ -11,6 +11,8 @@
     --gray: #b6b5c4;
 }
 
+
+
 body{
     background-color: var(--dark);
     color: var(--white);
@@ -18,6 +20,7 @@ body{
 section{
   padding: 5% 0;
 }
+
 .navbar-inverse{
     background-color: var(--dark);
     border-bottom: 2px solid var(--primary);
@@ -89,8 +92,11 @@ footer{
     background-image: url('img/real_square.svg');
     background-repeat: repeat-x;
 }
-#hero{
-    padding: 2% 30% ;
+
+@media screen and (min-width: 850px) {
+    #hero{
+        padding: 2% 30% ;
+    }
 }
 #hero .display-4{
     font-weight: 800;
@@ -154,4 +160,13 @@ p{
     background: -webkit-linear-gradient(-135deg, var(--secondary) 0%,var(--primary) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, var(--secondary) 0%,var(--primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     color: var(--white)
+}
+.apoio-logo{
+    opacity: 0.5;
+}
+.apoio-logo:hover{
+    opacity: 1;
+}
+.border-left{
+    border-left: 2px solid var(--secondary);
 }
