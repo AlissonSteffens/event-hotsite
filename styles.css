@@ -65,7 +65,7 @@ hr{
     margin-bottom: -3px;
     white-space: nowrap;
 }
-.nav-item:hover {
+.nav-item:hover, .nav-item:active{
     border-bottom: 3px solid var(--secondary);
     width: 100%;
 }
