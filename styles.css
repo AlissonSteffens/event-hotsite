@@ -155,10 +155,8 @@ p{
     font-size: 32px;
     padding: 10px;
     margin: auto;
-    background: var(--primary); /* Old browsers */
-    background: -moz-linear-gradient(-135deg, var(--secondary) 0%, var(--primary) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-135deg, var(--secondary) 0%,var(--primary) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, var(--secondary) 0%,var(--primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: var(--dark-primary); /* Old browsers */
+    
     color: var(--white)
 }
 .apoio-logo{
