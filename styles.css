@@ -2,6 +2,7 @@
 :root{
     --dark: #342b57;
     --light-dark: #392D5B;
+    --lighter-dark: #3d2D5B;
     --primary: #9c2d60;
     --secondary: #fe4c59;
     --white: #fefdfe;
@@ -156,8 +157,15 @@ p{
     padding: 10px;
     margin: auto;
     background: var(--dark-primary); /* Old browsers */
-    
+    height: 100%;
+    vertical-align: middle;
     color: var(--white)
+}
+ul i{
+  color: var(--dark-primary)  
+}
+.desc{
+    background-color: var(--lighter-dark) !important;
 }
 .apoio-logo{
     opacity: 0.5;
@@ -173,4 +181,20 @@ p{
         border: 0;
         border-left: 2px solid var(--secondary);
     }
+}
+#horarios ul {
+  list-style: none;
+}
+#horarios li {
+  line-height: 1.5rem;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+#horarios li:before {
+  content: "◉"; /* FontAwesome Unicode */
+  
+  color:var(--secondary);
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
 }
