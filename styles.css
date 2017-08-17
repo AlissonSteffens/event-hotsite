@@ -49,14 +49,14 @@ hr{
 }
 
 .btn-primary{
-    background: var(--primary); /* Old browsers */
-    background: -moz-linear-gradient(top, var(--secondary) 0%, var(--primary) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, var(--secondary) 0%,var(--primary) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, var(--secondary) 0%,var(--primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    border-color: var(--primary);
+    background: var(--dark-primary); /* Old browsers */
+    background: -moz-linear-gradient(top left, var(--secondary) 0%, var(--dark-primary) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top left, var(--secondary) 0%,var(--dark-primary) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom right, var(--secondary) 0%,var(--dark-primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border: none;
 }
 .btn-primary:hover{
-    border-color: var(--secondary);
+    
     background: var(--secondary); /* Old browsers */
 }
 
@@ -203,4 +203,8 @@ ul i{
   display: inline-block;
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 1.3em; /* same as padding-left set on li */
+}
+.btn-primary b{
+    color: #efefef;
+    font-size: 1.3rem;
 }
