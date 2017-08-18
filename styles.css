@@ -47,7 +47,14 @@ hr{
     background: -webkit-linear-gradient(left, var(--secondary) 0%,var(--primary) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, var(--secondary) 0%,var(--primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-
+.btn-outline-primary{
+    border: none;
+    color: var(--secondary); /* Old browsers */
+}
+.btn-outline-primary:hover{
+    background: var(--dark);
+    color: var(var(--white)); /* Old browsers */
+}
 .btn-primary{
     background: var(--dark-primary); /* Old browsers */
     background: -moz-linear-gradient(top left, var(--secondary) 0%, var(--dark-primary) 100%); /* FF3.6-15 */
